@@ -4,6 +4,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'Implementing stage1'
+        readFile 'index.html'
       }
     }
   }
